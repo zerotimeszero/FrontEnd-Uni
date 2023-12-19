@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 54</title>
+    <style>
+        .container{
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color: #2196F3;
+            cursor: pointer;
+            color: white;
+        }
+        .grid{
+            display: flex;
+            gap: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <button class="button js-button-click" type="button"> Нажми меня </button>
+            <button class="button js-button-add" type="button"> Добавить событие </button>
+            <button class="button js-button-remove" type="button"> Удалить событие </button>
+        </div>
+    </div>
+
+    <script>
+        const addButton = document.querySelector('.js-button-add')
+        const clickButton = document.querySelector('.js-button-click')
+        const deleteButton = document.querySelector('.js-button-remove')
+        
+        const handleClick = () => alert("CLICK!")
+
+        const handleAdd = () => clickButton.addEventListener('click',handleClick)
+
+        const handleRemove = () => clickButton.removeEventListener('click',handleClick)
+
+        deleteButton.addEventListener('click',handleRemove)
+        addButton.addEventListener('click',handleAdd, {once: true})
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 47</title>
+</head>
+<body>
+    <div id="by-id">Поиск по ID</div>
+    <div class="by-class">Поиск по классу 1</div>
+    <div class="by-class">Поиск по классу 2</div>
+    <article>Поиск по тегу</article>
+
+    <script>
+        const byId = document.getElementById("by-id");
+        const byClass = document.getElementsByClassName("by-class")
+        const byTag = document.getElementsByTagName("article")
+
+        const qsId = document.querySelector("#by-id")
+        const qsClass = document.querySelector(".by-class")
+        const qsTag = document.querySelector("article")
+        const qsAll = document.querySelectorAll("#by-id",".by-class","article")
+
+        console.log(byId);
+        console.log(byClass);
+        console.log(byTag);-
+        console.log(qsId);
+        console.log(qsClass);
+        console.log(qsTag);
+        console.log(qsAll);
+    </script>
+</body>
+</html>

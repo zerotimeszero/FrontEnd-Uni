@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 53</title>
+    <style>
+        .container{
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color: #2196F3;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button" type="button"> <span>А</span> Нажми меня  <span>Я</span> </button>
+    </div>
+
+    <script>
+        const button = document.querySelector('.button');
+
+        const handleClick = (event) => {
+            const curElem = event.currentTarget
+            console.log(curElem.className)
+            console.log(curElem.textContent)
+            console.log(curElem.innerHTML)
+            console.log(curElem.nodeName)
+            console.log(curElem.previousElementSibling)
+            console.log(curElem.previousSibling)
+            console.log(curElem.nextSibling)
+            console.log(curElem.nextElementSibling)
+            console.log(curElem.firstChild)
+            console.log(curElem.firstElementChild)
+            console.log(curElem.lastChild)
+            console.log(curElem.lastElementChild)
+            console.log(curElem.parentElement)
+            console.log(curElem.childNodes)
+            console.log(curElem.children)
+        }
+        button.addEventListener('click',handleClick);
+    </script>
+</body>
+</html>
