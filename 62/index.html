@@ -49,9 +49,13 @@
 
         const handleClick = () => {
             Cookies.set('name', input.value, {expires: 3})
-            name.innerText = input.value
+            name.textContent = input.value
+            
         }
-        name.innerText = Cookies.get('name')
+
+        button.addEventListener('click',handleClick)
+
+        name.textContent = Cookies.get('name')
         
         
         

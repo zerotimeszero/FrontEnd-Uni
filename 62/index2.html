@@ -47,13 +47,13 @@
             const object = {
                 name: input.value
             }
-            name.innerText = object.name
+            name.textContent = object.name
             localStorage.setItem('obj',JSON.stringify(object))
             
         }
 
         button.addEventListener('click',handleClick)
-        name.innerText = JSON.parse(localStorage.getItem('obj')).name
+        name.textContent = JSON.parse(localStorage.getItem('obj')).name
         
 
     </script>
