@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 68</title>
-
+    <link rel="preconnect" href="https://images.panda.org">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="images/bg.webp">
 
 </head>
 <body>
-    <header class="banner" style="background-image: url('images/bg.jpg');">
+    <header class="banner" style="background-image: url('images/bg.webp');">
         <div class="banner__inner container">
             <h1 class="banner__title">Photo Gallery</h1>
         </div>
     </header>
 
+    <svg width="0" height="0" class="hidden">
+        <symbol xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" id="alert">
+            <path d="M7.86 2h8.28L22 7.86v8.28L16.14 22H7.86L2 16.14V7.86L7.86 2zM12 8v4M12 16h.01"></path>
+        </symbol>
+    </svg>
 
     <section class="gallery container">
         <div class="gallery__inner">
@@ -26,48 +33,250 @@
         </div>
         <div class="gallery__grid row">
             <article class="col-1 col-lg-4">
-                <img class="gallery__item" src="images/adrian-dascal-AFppPIyQpH4-unsplash.jpg" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_200.webp 200w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_387.webp 387w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_484.webp 484w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_585.webp 585w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_675.webp 675w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_765.webp 765w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_836.webp 836w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_912.webp 912w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_940.webp 940w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_967.webp 967w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_1028.webp 1028w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_1098.webp 1098w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_1366.webp 1366w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_1386.webp 1386w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_1274.webp 1274w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_1347.webp 1347w,
+                images/adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_1400.webp 1400w"
+                src="adrian-dascal-AFppPIyQpH4-unsplash_c5m9gl_c_scale,w_1400.webp"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                >
+                 <svg class="feather feather-alert-octagon">
+                    <use xlink:href="#alert"></use>
+                </svg>
             </article>
              <article class="col-1 col-lg-4">
-                <img class="gallery__item" src="images/marek-piwnicki--9f4ZSP1_3o-unsplash.jpg" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_200.webp 200w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_377.webp 377w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_486.webp 486w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_582.webp 582w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_679.webp 679w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_775.webp 775w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_839.webp 839w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_867.webp 867w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_899.webp 899w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_964.webp 964w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_1025.webp 1025w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_1098.webp 1098w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_1341.webp 1341w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_1231.webp 1231w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_1289.webp 1289w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_1377.webp 1377w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_1398.webp 1398w,
+                images/artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_1400.webp 1400w"
+                src="artem-astashov-JzY3Uj24wKQ-unsplash_ckz6nj_c_scale,w_1400.webp"
+                alt=""
+                loading="lazy"
+                decoding="async">
+                 <svg class="feather feather-alert-octagon">
+                    <use xlink:href="#alert"></use>
+                </svg>
             </article>
              <article class="col-1 col-lg-4">
-                <img class="gallery__item" src="images/thiva-HwTlf2i30X8-unsplash.jpg" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_200.webp 200w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_461.webp 461w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_626.webp 626w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_726.webp 726w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_850.webp 850w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_966.webp 966w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_1069.webp 1069w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_1175.webp 1175w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_1273.webp 1273w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_1286.webp 1286w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_1298.webp 1298w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_1383.webp 1383w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_1396.webp 1396w,
+                images/guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_1400.webp 1400w"
+                src="guille-alvarez-IENX30F7Gw8-unsplash_lduegd_c_scale,w_1400.webp"
+                alt=""
+                loading="lazy"
+                decoding="async">
+                 <svg class="feather feather-alert-octagon">
+                    <use xlink:href="#alert"></use>
+                </svg>
             </article>
              <article class="col-1 col-lg-4">
-                <img class="gallery__item" src="images/pramod-tiwari-XwA54eDOQWs-unsplash.jpg" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                images/marek-piwnicki-9f4ZSP1_3o-unsplash_pb24y7_c_scale,w_200.webp 200w,
+                images/marek-piwnicki-9f4ZSP1_3o-unsplash_pb24y7_c_scale,w_523.webp 523w,
+                images/marek-piwnicki-9f4ZSP1_3o-unsplash_pb24y7_c_scale,w_774.webp 774w,
+                images/marek-piwnicki-9f4ZSP1_3o-unsplash_pb24y7_c_scale,w_928.webp 928w,
+                images/marek-piwnicki-9f4ZSP1_3o-unsplash_pb24y7_c_scale,w_1041.webp 1041w,
+                images/marek-piwnicki-9f4ZSP1_3o-unsplash_pb24y7_c_scale,w_1196.webp 1196w,
+                images/marek-piwnicki-9f4ZSP1_3o-unsplash_pb24y7_c_scale,w_1333.webp 1333w,
+                images/marek-piwnicki-9f4ZSP1_3o-unsplash_pb24y7_c_scale,w_1386.webp 1386w,
+                images/marek-piwnicki-9f4ZSP1_3o-unsplash_pb24y7_c_scale,w_1400.webp 1400w"
+                src="marek-piwnicki-9f4ZSP1_3o-unsplash_pb24y7_c_scale,w_1400.webp"
+                alt=""
+                loading="lazy"
+                decoding="async">
+                 <svg class="feather feather-alert-octagon">
+                    <use xlink:href="#alert"></use>
+                </svg>
             </article>
              <article class="col-1 col-lg-4">
-                <img class="gallery__item" src="images/artem-astashov-JzY3Uj24wKQ-unsplash.jpg" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_200.webp 200w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_445.webp 445w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_586.webp 586w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_664.webp 664w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_770.webp 770w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_878.webp 878w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_970.webp 970w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_1059.webp 1059w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_1146.webp 1146w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_1239.webp 1239w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_1313.webp 1313w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_1389.webp 1389w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_1312.webp 1312w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_1324.webp 1324w,
+                images/matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_1400.webp 1400w"
+                src="matej-rieciciar-bPRxj7wNft8-unsplash_s8r9f4_c_scale,w_1400.webp"
+                alt=""
+                loading="lazy"
+                decoding="async">
+                 <svg class="feather feather-alert-octagon">
+                    <use xlink:href="#alert"></use>
+                </svg>
             </article>
              <article class="col-1 col-lg-4">
-                <img class="gallery__item" src="images/robbin-grimm-lTCIwOu4Pgc-unsplash.jpg" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                images/pramod-tiwari-XwA54eDOQWs-unsplash_pndx81_c_scale,w_200.webp 200w,
+                images/pramod-tiwari-XwA54eDOQWs-unsplash_pndx81_c_scale,w_633.webp 633w,
+                images/pramod-tiwari-XwA54eDOQWs-unsplash_pndx81_c_scale,w_845.webp 845w,
+                images/pramod-tiwari-XwA54eDOQWs-unsplash_pndx81_c_scale,w_1042.webp 1042w,
+                images/pramod-tiwari-XwA54eDOQWs-unsplash_pndx81_c_scale,w_1283.webp 1283w,
+                images/pramod-tiwari-XwA54eDOQWs-unsplash_pndx81_c_scale,w_1396.webp 1396w,
+                images/pramod-tiwari-XwA54eDOQWs-unsplash_pndx81_c_scale,w_1400.webp 1400w"
+                src="pramod-tiwari-XwA54eDOQWs-unsplash_pndx81_c_scale,w_1400.webp"
+                alt=""
+                loading="lazy"
+                decoding="async">
+                 <svg class="feather feather-alert-octagon">
+                    <use xlink:href="#alert"></use>
+                </svg>
             </article>
              <article class="col-1 col-lg-4">
-                <img class="gallery__item" src="images/srikanta-h-u-Ju0DX6yhcBE-unsplash.jpg" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                images/robbin-grimm-lTCIwOu4Pgc-unsplash_bfvmsv_c_scale,w_200.webp 200w,
+                images/robbin-grimm-lTCIwOu4Pgc-unsplash_bfvmsv_c_scale,w_803.webp 803w,
+                images/robbin-grimm-lTCIwOu4Pgc-unsplash_bfvmsv_c_scale,w_1236.webp 1236w,
+                images/robbin-grimm-lTCIwOu4Pgc-unsplash_bfvmsv_c_scale,w_1400.webp 1400w"
+                src="robbin-grimm-lTCIwOu4Pgc-unsplash.webp"
+                alt=""
+                loading="lazy"
+                decoding="async">
+                 <svg class="feather feather-alert-octagon">
+                    <use xlink:href="#alert"></use>
+                </svg>
             </article>
              <article class="col-1 col-lg-4">
-                <img class="gallery__item" src="images/guille-alvarez-IENX30F7Gw8-unsplash.jpg" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                images/srikanta-h-u-Ju0DX6yhcBE-unsplash_qtvp5n_c_scale,w_200.webp 200w,
+                images/srikanta-h-u-Ju0DX6yhcBE-unsplash_qtvp5n_c_scale,w_665.webp 665w,
+                images/srikanta-h-u-Ju0DX6yhcBE-unsplash_qtvp5n_c_scale,w_869.webp 869w,
+                images/srikanta-h-u-Ju0DX6yhcBE-unsplash_qtvp5n_c_scale,w_1053.webp 1053w,
+                images/srikanta-h-u-Ju0DX6yhcBE-unsplash_qtvp5n_c_scale,w_1234.webp 1234w,
+                images/srikanta-h-u-Ju0DX6yhcBE-unsplash_qtvp5n_c_scale,w_1381.webp 1381w,
+                images/srikanta-h-u-Ju0DX6yhcBE-unsplash_qtvp5n_c_scale,w_1400.webp 1400w"
+                src="srikanta-h-u-Ju0DX6yhcBE-unsplash_qtvp5n_c_scale,w_1400.webp"
+                alt=""
+                loading="lazy"
+                decoding="async">
+                 <svg class="feather feather-alert-octagon">
+                    <use xlink:href="#alert"></use>
+                </svg>
             </article>
              <article class="col-1 col-lg-4">
-                <img class="gallery__item" src="images/matej-rieciciar-bPRxj7wNft8-unsplash.jpg" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_200.webp 200w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_393.webp 393w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_493.webp 493w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_602.webp 602w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_696.webp 696w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_784.webp 784w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_868.webp 868w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_900.webp 900w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_937.webp 937w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_1000.webp 1000w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_1063.webp 1063w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_1123.webp 1123w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_1186.webp 1186w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_1248.webp 1248w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_1310.webp 1310w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_1362.webp 1362w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_1395.webp 1395w,
+                images/thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_1400.webp 1400w"
+                src="thiva-HwTlf2i30X8-unsplash_av1q6h_c_scale,w_1400.webp"
+                alt=""
+                loading="lazy"
+                decoding="async">
+                 <svg class="feather feather-alert-octagon">
+                    <use xlink:href="#alert"></use>
+                </svg>
             </article>
              <article class="col-1 col-lg-4">
-                <img class="gallery__item" src="images/tony-litvyak-H7RLUfM1sus-unsplash.jpg" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_200.webp 200w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_382.webp 382w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_490.webp 490w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_616.webp 616w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_754.webp 754w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_882.webp 882w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_1011.webp 1011w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_1144.webp 1144w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_1272.webp 1272w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_1388.webp 1388w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_1398.webp 1398w,
+                images/tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_1400.webp 1400w"
+                src="tony-litvyak-H7RLUfM1sus-unsplash_kauhln_c_scale,w_1400.webp"
+                alt=""
+                loading="lazy"
+                decoding="async">
+                 <svg class="feather feather-alert-octagon">
+                    <use xlink:href="#alert"></use>
+                </svg>
             </article>
         </div>
 
-        <img class="w-100" src="https://images.panda.org/assets/images/pages/welcome/orangutan_1600x1000_279157.jpg" alt="">
+        <img class="w-100" src="https://images.panda.org/assets/images/pages/welcome/orangutan_1600x1000_279157.jpg" alt="" loading="lazy" decoding="async">
     </section>
 
 

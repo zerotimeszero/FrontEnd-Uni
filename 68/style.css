@@ -1,6 +1,8 @@
 img {
     max-inline-size: 100%;
     block-size: auto;
+    height: 600px;
+    width: 100%;
 }
 
 body{
@@ -23,10 +25,4 @@ body{
 
 .gallery__title{
     font-size: 48px;
-}
-
-.gallery__item{
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
 }
