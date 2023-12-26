@@ -1,5 +1,5 @@
 const firstName = 'Albus'
-var age = 100;
+let age = 100;
 
 
 age = "One hundred"
