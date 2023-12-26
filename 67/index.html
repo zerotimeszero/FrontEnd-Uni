@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 67</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+        }
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+        .page__list{
+            margin-top: 20px;
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .list__message{
+            padding: 5px;
+        }
+        .list--send{
+            background: #8BC34A;
+        }
+        .list--receive{
+            background: #e4e4e4;
+        }
+
+
+    </style>
+</head>
+<body class="page">
+    <div class="container">
+        <div class="send-message">
+            <input type="text" class="js-input">
+            <button class="js-button">Отправить</button>
+        </div>
+        <div class="js-list page__list list">
+        </div>
+    </div>
+    <script>
+
+        const list = document.querySelector('.js-list')
+        const input = document.querySelector('.js-input')
+        const button = document.querySelector('.js-button')
+
+        const url = "wss://socketsbay.com/wss/v2/1/demo/";
+        const websocket = new WebSocket(url);
+
+        const sendMessage = (text) => {
+            websocket.send(text)
+        }
+
+        websocket.onmessage = (event) => {
+            const text = event.data
+            const date = new Date().toLocaleString()
+            const newMessage = document.createElement('div')
+            newMessage.classList.add('list__message','list--receive')
+            newMessage.textContent = `Получено: ${text} (${date})`
+            list.prepend(newMessage)
+        };
+
+        websocket.onopen = (event) => {
+            console.log(event)
+        };
+        websocket.onclose = (event) => {
+            console.log(event)
+        };
+        websocket.onerror = (event) => {
+            console.log(event)
+        };
+
+        button.addEventListener('click', () => {
+            const text = input.value
+            const date = new Date().toLocaleString()
+            sendMessage(text)
+            const newMessage = document.createElement('div')
+            newMessage.classList.add('list__message','list--send')
+            newMessage.textContent = `Отправлено: ${text} (${date})`
+            list.prepend(newMessage)
+        })
+
+    </script>
+</body>
+</html>
